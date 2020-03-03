@@ -1,0 +1,41 @@
+body{
+    background-color: dodgerblue;
+    margin: 0px;
+    padding: 0px;
+}
+.cartes{
+    text-align: center;
+    margin-left: 210px;
+    width: 70%;
+    height: 300px;
+    margin-top: 0%;
+}
+img{
+    width: 200px;
+    height: 300px;
+    margin-left: 20px;
+}
+p{
+    margin-left: 400px;
+    width: 600px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    color: chartreuse;
+    margin: 0px;
+}
+.footer{
+    font-size: 30px;
+    color: white;
+}
+.logo{
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 70px;
+    width: 80px;
+    background-image: url('nan.png');
+    background-size: cover;
+}

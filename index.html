@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changement d'images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        
+    </div>
+    <h1>
+        Bienvenue dans le jeu de cartes des Naniens 3.20
+    </h1>
+    <p>
+        <marquee  direction="down-up">
+            <h3 style="font-size: 40px">Veuillez survoler les cartes et elles se retourneront</h3>
+        </marquee>
+    </p>
+    <div class="cartes">
+        <img id="image1" src="dos.gif" alt="" > 
+        <img id="image2" src="dos.gif" alt="" >
+        <img id="image3" src="dos.gif" alt="" >
+        <img id="image4" src="dos.gif" alt="" >
+    </div>
+    <div class="footer">
+        <h1>
+            MERCI D'AVOIR VISITER MON PETIT JEU 
+        </h1>
+    </div>
+
+</body>
+<script>
+        var a= false;
+        var carte1 = document.getElementById('image1');
+        var carte2 = document.getElementById('image2');
+        var carte3 = document.getElementById('image3');
+        var carte4 = document.getElementById('image4');
+
+
+    // la fonction pour la carte 1
+        carte1.addEventListener("mouseover", function(){
+            var retour1 = document.getElementsByTagName('img')[0];
+            if(!a){
+                var rotation1 = retour1.setAttribute('style', 'transform: rotateY(200deg);transition:transform 3s');
+                if(!rotation1){
+                    setTimeout(() => 
+                        {
+                            retour1.setAttribute('src', 'coeur.gif');
+                            retour1.removeAttribute('style');
+                        },1000);;
+                }
+                a=true;
+            }else{
+                var rotation2=retour1.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                setTimeout(() => 
+                    {
+                        retour1.setAttribute('src', 'dos.gif');
+                        retour1.removeAttribute('style');
+                    },1000);;
+                a=false;
+            }
+        })
+
+    // la fonction pour la carte 2
+         carte2.addEventListener('mouseover', function(){
+            var retour2 = document.getElementsByTagName('img')[1];
+            if(!a){
+                var rotation2 = retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                if(!rotation2){
+                    setTimeout(() => 
+                        {
+                            retour2.setAttribute('src', 'carreau.gif');
+                            retour2.removeAttribute('style');
+                        },1000);;
+                }
+                a=true;
+            }else{
+                var rotation2=retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                setTimeout(() => 
+                    {
+                        retour2.setAttribute('src', 'dos.gif');
+                        retour2.removeAttribute('style');
+                    },1000);;
+                a=false;
+            }
+        })
+
+    // la fonction pour la carte 3
+        carte3.addEventListener('mouseover', function(){
+            var retour2 = document.getElementsByTagName('img')[2];
+            if(!a){
+                var rotation2 = retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                if(!rotation2){
+                    setTimeout(() => 
+                        {
+                            retour2.setAttribute('src', 'pique.gif');
+                            retour2.removeAttribute('style');
+                        },1000);;
+                }
+                a=true;
+            }else{
+                var rotation2=retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                setTimeout(() => 
+                    {
+                        retour2.setAttribute('src', 'dos.gif');
+                        retour2.removeAttribute('style');
+                    },1000);;
+                a=false;
+            }
+        })
+
+    // la fonction pour la carte 4
+        carte4.addEventListener('mouseover', function(){
+            var retour2 = document.getElementsByTagName('img')[3];
+            if(!a){
+                var rotation2 = retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                if(!rotation2){
+                    setTimeout(() => 
+                        {
+                            retour2.setAttribute('src', 'trefle.gif');
+                            retour2.removeAttribute('style');
+                        },1000);;
+                }
+                a=true;
+            }else{
+                var rotation2=retour2.setAttribute('style', 'transform: rotateY(180deg);transition:transform 3s');
+                setTimeout(() => 
+                    {
+                        retour2.setAttribute('src', 'dos.gif');
+                        retour2.removeAttribute('style');
+                    },1000);;
+                a=false;
+            }
+        })
+
+    </script>
+
+</html>
